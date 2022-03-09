@@ -2,6 +2,7 @@ ul {
     list-style-type: none;
     display: grid;
     padding-left: 5px;
+    width: 100%;
 }
 
 .year-title {
@@ -23,7 +24,6 @@ li {
     font-size: 15px;
     background: #e8e8a6;
     color: #133b5c;
-    width: fit-content;
 }
 
 li>div {
@@ -37,5 +37,6 @@ li>div {
         display: grid;
         grid-template-columns: 30% 17% 20%;
         gap: 0 14px;
+        overflow: hidden;
     }
 }
