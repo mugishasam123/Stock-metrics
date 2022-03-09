@@ -1,0 +1,20 @@
+@media (min-width:768px) {
+    .stock-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+    }
+}
+
+@media (max-width:768px) {
+    .stock-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+    }
+}
+
+.stocks {
+    display: grid;
+    gap: 1px;
+}

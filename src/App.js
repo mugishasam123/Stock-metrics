@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchAllStocks } from "./redux/stocks/thunks/stockApi";
 import Home from "./components/pages/Home";
-import CardDetails from "./components/pages/CardDetails";
+import Details from "./components/pages/Details";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -13,8 +13,8 @@ const App = () => {
   });
   return (
     <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/details/" element={<CardDetails />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/details/:id" element={<Details />} />
     </Routes>
   );
 };

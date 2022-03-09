@@ -1,12 +1,9 @@
 import React from "react";
-import styled from "styled-components";
+
 import { BsFillMicFill } from "react-icons/bs";
 import { IoIosSettings, IoIosArrowBack } from "react-icons/io";
 import { NavLink } from "react-router-dom";
-import '../styles/header.css'
-
-
-
+import "../styles/header.css";
 
 const Header = ({ home }) => {
   return (
@@ -16,7 +13,7 @@ const Header = ({ home }) => {
           <IoIosArrowBack size="25px" color="#133B5C" />
         </NavLink>
       )}
-      <h1>{home ? "Stock Metrics" : "Company Details"}</h1>
+      <h1> {home ? "Stock Metrics" : "Company Details"} </h1>
       <div className="left-icons">
         <BsFillMicFill />
         <IoIosSettings />

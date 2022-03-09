@@ -1,10 +1,11 @@
 import React from "react";
-import manImg from '../images/stock.svg'
+import '../styles/man.css'
 const Man = () => {
-    return (
-        <img src={manImg} alt="stockimage"/>
-
-    );
+  return (
+    <div className="man-pic">
+     
+    </div>
+  );
 };
 
 export default Man;
