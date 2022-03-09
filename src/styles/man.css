@@ -1,7 +1,7 @@
 .man-pic {
-    background-image: url(../images/stock.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 300px 250px;
-    height: 35vh;
+  background-image: url(../images/stock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px 250px;
+  height: 35vh;
 }
