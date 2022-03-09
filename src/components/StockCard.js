@@ -27,12 +27,10 @@ const StockCard = ({ stock }) => {
       </span>
       <span>
         <IoIosArrowRoundUp className="green-arrow" />
-
         {stock.changes}
       </span>
       <span>
         <IoIosArrowRoundDown className="red-arrow" />
-
         {stock.changesPercentage}
       </span>
     </div>
