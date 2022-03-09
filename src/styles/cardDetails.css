@@ -35,7 +35,7 @@ li>div {
 @media (max-width:768px) {
     li {
         display: grid;
-        grid-template-columns: 30% 17% 20%;
+        grid-template-columns: 30% 21% 20%;
         gap: 0 14px;
         overflow: hidden;
     }
