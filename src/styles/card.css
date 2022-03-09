@@ -1,42 +1,42 @@
-    .stock-card {
-        padding: 5px 5px 10px 12px;
-        background-color: rgb(232, 232, 166);
-        display: grid;
-        gap: 8px;
-        background-image: url(../images/stock_card.png);
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-size: 55% 23%;
-        height: 250px;
-    }
-    
-    .stock-card:hover {
-        cursor: pointer;
-    }
-    
-    .company-name {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .title-name {
-        font-size: 1rem;
-    }
-    
-    .ticker {
-        background-color: #EBEEED;
-        width: fit-content;
-        padding: 6px 4px;
-        border-radius: 10px;
-        text-align: center;
-        height: fit-content;
-    }
-    
-    .rounded {
-        border: 1px solid grey;
-        border-radius: 50%;
-        color: black;
-        width: 20px;
-        height: 20px;
-    }
+.stock-card {
+  padding: 5px 5px 10px 12px;
+  background-color: rgb(232, 232, 166);
+  display: grid;
+  gap: 8px;
+  background-image: url(../images/stock_card.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 55% 23%;
+  height: 250px;
+}
+
+.stock-card:hover {
+  cursor: pointer;
+}
+
+.company-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-name {
+  font-size: 1rem;
+}
+
+.ticker {
+  background-color: #ebeeed;
+  width: fit-content;
+  padding: 6px 4px;
+  border-radius: 10px;
+  text-align: center;
+  height: 30px;
+}
+
+.rounded {
+  border: 1px solid grey;
+  border-radius: 50%;
+  color: black;
+  width: 20px;
+  height: 20px;
+}

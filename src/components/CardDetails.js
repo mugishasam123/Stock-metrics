@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchStockDetails } from "../redux/stocks/thunks/stockApi";
-import { useParams } from "react-router-dom";
-import { IoIosArrowRoundDown, IoIosArrowRoundUp } from "react-icons/io";
-import "../styles/cardDetails.css";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { IoIosArrowRoundDown, IoIosArrowRoundUp } from 'react-icons/io';
+import { fetchStockDetails } from '../redux/stocks/thunks/stockApi';
+import '../styles/cardDetails.css';
 
 const CardDetails = () => {
   const details = useSelector((state) => state.details);
@@ -18,31 +18,40 @@ const CardDetails = () => {
   return (
     <section className="income-statement">
       <h3 className="year-title"> YEARLY BREAKDOWN </h3>
+
       <ul>
-        
         {details.map((data) => (
-          <li>
+          <li key={data.calendarYear}>
             <div>
-              <span> {data.calendarYear} </span>
-              <span> {`Filling Date:${data.fillingDate}`} </span>
-              <span> {`Accepted Date:${data.acceptedDate}`} </span>
+              <span>{data.calendarYear}</span>
+
+              <span>{`Filling Date:${data.fillingDate}`}</span>
+
+              <span>{`Accepted Date:${data.acceptedDate}`}</span>
             </div>
+
             <div>
-              <span> {stock.ticker} </span>
+              <span>{stock.ticker}</span>
+
               <span>
-                
-                <IoIosArrowRoundUp className="green-arrow" /> {stock.changes}
+                <IoIosArrowRoundUp className="green-arrow" />
+
+                {stock.changes}
               </span>
+
               <span>
-                
                 <IoIosArrowRoundDown className="red-arrow" />
+
                 {stock.changesPercentage}
               </span>
             </div>
+
             <div className="short-div">
-              <span> {`Revenue:${data.revenue}`} </span>
-              <span> {`Profit:${data.grossProfit}`} </span>
-              <span> {`Expenses:${data.costAndExpenses}`} </span>
+              <span>{`Revenue:${data.revenue}`}</span>
+
+              <span>{`Profit:${data.grossProfit}`}</span>
+
+              <span>{`Expenses:${data.costAndExpenses}`}</span>
             </div>
           </li>
         ))}

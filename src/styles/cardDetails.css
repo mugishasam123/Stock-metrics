@@ -1,42 +1,42 @@
 ul {
-    list-style-type: none;
-    display: grid;
-    padding-left: 5px;
-    width: 100%;
+  list-style-type: none;
+  display: grid;
+  padding-left: 5px;
+  width: 100%;
 }
 
 .year-title {
-    color: white;
-    padding: 10px;
+  color: white;
+  padding: 10px;
 }
 
 .income-statement {
-    background-color: rgb(161, 181, 125);
+  background-color: rgb(161, 181, 125);
 }
 
 li {
-    display: grid;
-    grid-template-columns: 48% 17% 12%;
-    gap: 0 10px;
-    border: solid 1px #A1B57D;
-    border-left: solid 5px #A1B57D;
-    padding: 15px 8px;
-    font-size: 15px;
-    background: #e8e8a6;
-    color: #133b5c;
+  display: grid;
+  grid-template-columns: 48% 17% 12%;
+  gap: 0 10px;
+  border: solid 1px #a1b57d;
+  border-left: solid 5px #a1b57d;
+  padding: 15px 8px;
+  font-size: 15px;
+  background: #e8e8a6;
+  color: #133b5c;
 }
 
-li>div {
-    display: grid;
-    gap: 6px;
-    align-self: center;
+li > div {
+  display: grid;
+  gap: 6px;
+  align-self: center;
 }
 
-@media (max-width:768px) {
-    li {
-        display: grid;
-        grid-template-columns: 30% 21% 20%;
-        gap: 0 14px;
-        overflow: hidden;
-    }
+@media (max-width: 768px) {
+  li {
+    display: grid;
+    grid-template-columns: 30% 21% 20%;
+    gap: 0 14px;
+    overflow: hidden;
+  }
 }
